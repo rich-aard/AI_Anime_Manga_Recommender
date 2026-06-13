@@ -34,9 +34,9 @@ _ensure_faiss_index()
 init_session_state()
 
 PAGES = {
-    "[RXZ.] Home": home,
-    "[RXZ.] Recommendations": recommendations,
-    "[RXZ.] History": history,
+    "Home": home,
+    "Recommendations": recommendations,
+    "History": history,
 }
 
 with st.sidebar:
