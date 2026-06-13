@@ -8,8 +8,7 @@ from app.utils.session_state import init_session_state
 from app.pages import home, recommendations, history
 
 st.set_page_config(
-    page_title="Otaku Recs: Anime & Manga Recommender",
-    page_icon="RXZ.",
+    page_title="[RXZ.] Otaku Recs: Anime & Manga Recommender",
     layout="centered",
 )
 
@@ -22,7 +21,7 @@ PAGES = {
 }
 
 with st.sidebar:
-    st.title("Otaku Recs")
+    st.title("[RXZ.] Otaku Recs")
     st.caption("AI-powered anime & manga guide")
     st.divider()
     selection = st.radio(

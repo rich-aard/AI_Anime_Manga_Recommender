@@ -42,7 +42,7 @@ Built as a personal portfolio project to explore RAG pipelines, LangChain agent 
 ## Project Structure
 
 ```
-AI_ANIME_RECOMMENDER/
+AI_Anime_Manga_Recommender/
 │
 ├── app/                          # Streamlit frontend
 │   ├── components/
@@ -79,10 +79,13 @@ AI_ANIME_RECOMMENDER/
 │   └── customException.py        # Structured exception handling
 │
 ├── data/
-│   ├── raw/                      # Original CSV files from Kaggle
-│   ├── processed/                # combined_dataset.csv
-│   └── vectorstore/              # Persisted FAISS index
+│   ├── raw/                      # Original CSV files from Kaggle (not committed)
+│   ├── processed/                # combined_dataset.csv (not committed)
+│   └── vectorstore/              # Persisted FAISS index (not committed)
 │
+├── .env.example
+├── packages.txt                  # HF Spaces system dependencies
+├── requirements.txt              # HF Spaces Python dependencies
 ├── pyproject.toml
 └── README.md
 ```
@@ -101,8 +104,8 @@ AI_ANIME_RECOMMENDER/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/rich-aard/AI_ANIME_RECOMMENDER.git
-cd AI_ANIME_RECOMMENDER
+git clone https://github.com/rich-aard/AI_Anime_Manga_Recommender.git
+cd AI_Anime_Manga_Recommender
 ```
 
 ### 2. Install dependencies
@@ -138,18 +141,30 @@ data/raw/manga_dataset.csv
 
 ### 5. Build the vector index
 
+**Linux / Mac:**
 ```bash
-# Process and clean the data
 uv run python -m backend.vectorstore.data_loader
-
-# Embed and index (~50 mins on CPU)
 uv run python -m backend.vectorstore.ingest
 ```
 
+**Windows (PowerShell):**
+```powershell
+uv run python -m backend.vectorstore.data_loader
+uv run python -m backend.vectorstore.ingest
+```
+
+Ingestion takes approximately 50 minutes on CPU for 85,977 documents.
+
 ### 6. Run the app
 
+**Linux / Mac:**
 ```bash
-PYTHONPATH=. uv run streamlit run app/main.py
+uv run streamlit run app/main.py
+```
+
+**Windows (PowerShell):**
+```powershell
+uv run streamlit run app/main.py
 ```
 
 Open [http://localhost:8501](http://localhost:8501)
@@ -173,7 +188,7 @@ Open [http://localhost:8501](http://localhost:8501)
 **Follow-up:**
 > "Give me more like the first one"
 
-Use the sidebar to filter results by **Anime**, **Manga**, or **Both**.
+Use the sidebar to filter results by Anime, Manga, or Both.
 
 ---
 
@@ -222,4 +237,3 @@ Total:    85,977 indexed titles
 ```
 
 ---
-
