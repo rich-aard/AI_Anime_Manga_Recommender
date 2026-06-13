@@ -188,7 +188,6 @@ numpy==2.4.6
     #   scipy
     #   sentence-transformers
     #   streamlit
-    #   torchvision
     #   transformers
 orjson==3.11.9
     # via
@@ -210,9 +209,7 @@ pandas==3.0.3
     #   ai-anime-recommender (pyproject.toml)
     #   streamlit
 pillow==12.2.0
-    # via
-    #   streamlit
-    #   torchvision
+    # via streamlit
 propcache==0.5.2
     # via
     #   aiohttp
@@ -321,11 +318,7 @@ tokenizers==0.22.2
 toml==0.10.2
     # via streamlit
 torch==2.12.0
-    # via
-    #   sentence-transformers
-    #   torchvision
-torchvision==0.27.0
-    # via ai-anime-recommender (pyproject.toml)
+    # via sentence-transformers
 tqdm==4.68.2
     # via
     #   huggingface-hub
