@@ -21,6 +21,12 @@ This project combines vector similarity search with a large language model to re
 Built as a personal portfolio project to explore RAG pipelines, LangChain agent architectures, and production ML deployment.
 
 ---
+---
+## Live Demo
+
+[https://ryczard-ai-anime-manga-recommender.hf.space](https://ryczard-ai-anime-manga-recommender.hf.space)
+
+---
 
 ## Features
 
