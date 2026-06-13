@@ -1,4 +1,4 @@
-# 🎌 AI Anime & Manga Recommender
+# [RXZ.] AI Anime & Manga Recommender
 
 An AI-powered anime and manga recommendation system built with Retrieval-Augmented Generation (RAG). Ask in natural language and get personalized recommendations backed by a searchable database of 85,000+ titles.
 
@@ -208,18 +208,6 @@ LLM Generation (LLaMA 3.3 70B via Groq, streamed)
     ▼
 Numbered recommendations with sources
 ```
-
----
-
-## Roadmap
-
-- [ ] Switch to `all-mpnet-base-v2` embeddings for better semantic matching (requires GPU)
-- [ ] Grafana + Prometheus monitoring
-- [ ] HuggingFace Spaces deployment
-- [ ] GitHub Actions CI/CD pipeline
-- [ ] Score-based pre-filtering before vector search
-- [ ] User preference persistence across sessions
-- [ ] Manga chapter tracking integration
 
 ---
 
