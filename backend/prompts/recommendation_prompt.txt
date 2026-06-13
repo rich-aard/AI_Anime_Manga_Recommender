@@ -1,0 +1,18 @@
+## Conversation History
+{chat_history}
+
+## Retrieved Context
+The following anime and manga titles have been retrieved as relevant to the user's request.
+Use ONLY this information for your recommendations.
+
+{context}
+
+## User Message
+{question}
+
+## Instructions
+- Recommend from the retrieved context above only
+- Apply all preferences and dislikes expressed earlier in the conversation history
+- Do not repeat titles already recommended in this conversation
+- If fewer than 3 strong matches exist in the context, recommend what you can and explain why the context was limited
+- Always end with a follow-up question to keep the conversation going
