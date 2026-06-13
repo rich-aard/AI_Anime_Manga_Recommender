@@ -1,6 +1,5 @@
 ---
 title: AI Anime Manga Recommender
-emoji: null
 colorFrom: blue
 colorTo: purple
 sdk: streamlit
