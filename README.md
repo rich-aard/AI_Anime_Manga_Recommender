@@ -1,3 +1,14 @@
+---
+title: AI Anime Manga Recommender
+emoji: null
+colorFrom: blue
+colorTo: purple
+sdk: streamlit
+sdk_version: 1.58.0
+app_file: app/main.py
+pinned: false
+---
+
 # [RXZ.] AI Anime & Manga Recommender
 
 An AI-powered anime and manga recommendation system built with Retrieval-Augmented Generation (RAG). Ask in natural language and get personalized recommendations backed by a searchable database of 85,000+ titles.
